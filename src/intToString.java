@@ -3,15 +3,29 @@
  */
 public class intToString {
     public static void main(String[] args) {
-        System.out.println(calculate("1 + 1"));
+        System.out.println(calculate("1+1"));
+        System.out.println(calculate("1-1"));
+        System.out.println(calculate("10*1"));
+        System.out.println(calculate("4/2"));
     }
     public static double calculate(String str){
-        int fin = 0;
-        char[] number = str.toCharArray();
-        int a;
-        for(int i  =0; i<str.length(); i++){
-           a = str.charAt(i);
-
-        }return fin;
+        System.out.println("Operators that you have to calculate: " +str);
+        String[] operators =str.split("[0-9]+");
+        String[] operands =str.split("[*/+-]");
+        int agregate = Integer.parseInt(operands[0]);
+        for(int i=1;i<operands.length;i++){
+            if(operators[i].equals("+"))
+                agregate += Integer.parseInt(operands[i]);
+            else if(operators[i].equals("-"))
+                agregate -= Integer.parseInt(operands[i]);
+            else if(operators[i].equals("/"))
+                agregate /= Integer.parseInt(operands[i]);
+            else
+                agregate *= Integer.parseInt(operands[i]);
+        }
+        System.out.print("The result is: " );
+        return agregate;
     }
-}
+
+    }
+
