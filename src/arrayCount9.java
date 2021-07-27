@@ -6,9 +6,9 @@ import java.sql.Array;
 
 public class arrayCount9 {
     public static void main(String[] args) {
-        int ar[] = {1,2,9,3,4};
-        int an[] = {1,2,3,4,9};
-        int ab[] = {1,2,3};
+        int[] ar = {1,2,9,3,4};
+        int[] an = {1,2,3,4,9};
+        int[] ab = {1,2,3};
         System.out.println(arrayCount9(ar));
         System.out.println(arrayCount9(an));
         System.out.println(arrayCount9(ab));
