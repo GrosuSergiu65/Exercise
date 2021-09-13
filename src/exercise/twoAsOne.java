@@ -9,8 +9,9 @@ public class twoAsOne {
         System.out.println(twoAsOne(3,2,2));
     }
     public static boolean twoAsOne(int a, int b, int c){
-        boolean result = false;
-        for()
+        boolean result  =false;
+        if((a+b==c) || (b+c==a) || (c+a==b))
+            result = true;
 
 
         return result;

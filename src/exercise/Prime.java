@@ -2,7 +2,7 @@ package exercise;
 
 import java.util.ArrayList;
 
-public class d {
+public class Prime {
     public static void main(String[] args) {
         System.out.println(primeNumber(1, 100));
     }
